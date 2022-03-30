@@ -1,51 +1,19 @@
 package school;
 
 public class Calculator {
-   private int num1;
-    private int num2;
-    private double num3;
-    private double num4;
 
-    public int getNum2() {
-        return num2;
-    }
-
-    public void setNum2(int num2) {
-        this.num2 = num2;
-    }
-
-
-    public double getNum3() {
-        return num3;
-    }
-
-    public void setNum3(double num3) {
-        this.num3 = num3;
-    }
-
-
-
-    public int getNum1() {
-        return num1;
-    }
-
-    public void setNum1(int num1) {
-        this.num1 = num1;
-    }
-
-    public double getNum4() {
-        return num4;
-    }
-
-    public void setNum4(double num4) {
-        this.num4 = num4;
-    }
+    private double num1;
+    private double num2;
 
 
 
 
-    public Calculator(){
-        System.out.println("This is equals...");
+
+
+
+    public Calculator(double num1, double num2){
+        this.num1=num1;
+        this.num2=num2;
     }
 
     public void addNum() {
@@ -70,10 +38,10 @@ public class Calculator {
     }
 
     public void rootNum (){
-        System.out.println(Math.sqrt(num3));
+        System.out.println(Math.sqrt(num1));
     }
 
     public void expNum (){
-        System.out.println(Math.pow(num4,num4));
+        System.out.println(Math.pow(num2,num2));
     }
 }
